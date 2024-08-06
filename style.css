@@ -1,0 +1,476 @@
+body{
+    background-color: rgb(239, 240, 241);
+    padding-left: 360px;
+    margin-bottom: 100px;
+    padding-right: 50px;
+}
+
+img{
+    width: 170px;
+    height: 70px;
+    object-fit: contain; 
+}
+.logo{
+    width: 300px;
+    height: auto;
+    padding: 30px 0;
+    text-align: center;
+}
+.vertical_nav{
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    position: fixed;
+}
+nav a{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    gap: 8px;
+    color: #252424;
+    align-items: center;
+    height: 60px;
+    padding: 0 105px;
+    align-content: space-around; 
+    transition: #ddd4d4 1s ;
+}
+nav a:hover{
+    background-color: #ddd4d4;
+}
+.nav-bar{
+    border-bottom: 1px solid #252424;   
+}
+
+.support{
+    
+    width: 300px;
+    text-align: center;
+}
+.f6{
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+button{
+    cursor: pointer;
+    background-color: rgb(67, 115, 218);
+    border-style: none;
+    border-radius: 30px;
+    color: white;
+    margin: 8px 95px;
+    width: 120px;
+    height: 35px;
+}
+
+#top{
+    display: flex;
+    justify-content: space-between;
+}
+.left-top {
+    display: flex;
+    width: 400px;
+    height: 52px;
+    vertical-align: text-bottom;
+    justify-content: space-evenly;
+    
+}
+.left-top p{
+    font-weight: 700;
+    font-size: 24px;
+    align-items: center;
+}
+.calen{
+    width: 200px;
+    height: 30px;
+    border-radius: 15px;
+    border-style: none;
+    text-align: center;
+    border-right: none;
+    background-color: white;
+    align-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 20px;
+}
+.calen h5{
+    transform: translateY(-13px);
+    font-weight: 100;
+}
+.theme {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 2px;
+    align-items: center;
+}
+.theme-change {
+    width: 30px;
+    height: 15px;
+    border-radius: 30px;
+    background-color: white;
+    position: relative;
+    cursor: pointer;
+}
+.theme-change::before {
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: black;
+    top: 1px;
+    left: 1px;
+    transition: transform 0.3s ease;
+}
+.theme-change.active::before {
+    transform: translateX(15px);
+    background-color: yellow;
+}
+.pro{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    object-fit: cover;
+    
+}
+.right-top{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    padding-top: 5px;
+    gap: 12px;
+}
+.right-top h5{
+    font-size: 15px;
+}
+
+.columns{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   
+   height: 900px;
+   column-gap: 20px;
+}
+.col-1{
+    
+    height: 320px;
+
+}
+.columns .col-1 .box{
+    width: 250px;
+    height: 150px;
+    background-color:white;
+    border-radius: 20px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 5px;
+}
+.col-2{
+
+    height: 320px;
+}
+.col-2 .box-ryt{
+    width: 250px;
+    height: 310px;
+    background-color: white;
+    border-radius: 20px;
+    
+}
+p{
+    font-size: 22px;
+    font-weight: 500;
+    padding: 0 20px;
+}
+h1{
+    padding: 0 20px;
+    font-weight: 700;
+}
+.num{
+    font-size: 14px;
+    color: rgb(67, 203, 67);
+    font-weight: 600;
+}
+span{
+    color: #b7b5b5;
+    font-size: 14px;
+}
+.num1{
+    font-size: 14px;
+    color: rgb(205, 48, 48);
+    font-weight: 600;
+}
+.box-ryt h1{
+    display: grid;
+}
+.containerd {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+  .labels {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-right: 20px;
+    margin-left: 15px;
+  }
+  .labels div {
+    margin-bottom: 10px;}
+    .label-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      .color-box {
+        width: 15px;
+        height: 10px;
+        border-radius: 42%; /* Makes the box a circle */
+        display: inline-block;
+        margin-right: 10px;
+      }
+canvas {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+.container-2, .line{
+    width: 510px;
+    height: 300px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+    
+.row-1 p{
+    display: flex;
+   justify-content: space-between;
+    
+}
+#year{
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding-right: 10px; 
+    cursor: pointer;
+    text-align: end; 
+}
+
+.row-1{
+    display: flex;
+    flex-direction: column;
+    
+}
+.chart-wrapper {
+    display: flex;
+    align-items: flex-end;
+    padding: 50px 20px;
+    width: 450px;
+    height: 150px;
+}
+
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.chart {
+    display: flex;
+    align-items: flex-end;
+    height: 180px;
+    position: relative;
+    margin-left: 10px;
+}
+
+.chart-bar {
+    background-color: #169ec4;
+    margin: 0 12px;
+    width: 10px;
+    position: relative;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    transition: height 0.5s ease-in-out;
+}
+
+.chart-bar:hover {
+    background-color: #95dbea;
+}
+
+
+
+.x-axis {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+
+.x-axis span {
+    font-size: 14px;
+    width: 20px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.y-axis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+}
+
+.y-axis div {
+    font-size: 12px;
+    text-align: right;
+    width: 30px;
+}
+/*ryt-2*/
+.ryt-2{
+    display: flex;
+    column-gap: 20px;
+}
+.col-2 .box-ryt-2{
+    width: 250px;
+    height: 200px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    
+}
+.paid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.paid i{
+    font-size: 22px;
+    padding-top: 10px;
+}
+
+.progress-circle {
+    position: relative;
+    width: 70px;
+    height: 70px;
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #ddd;
+    stroke-width: 5;
+}
+
+.circle {
+    fill: none;
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke: #e128ad;
+    stroke-dasharray: 220; /* 2 * π * 35 (circumference) */
+    stroke-dashoffset: 220;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+
+.circle-text {
+    font-size: 0.75em;
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+
+.end-dot {
+    fill: #e128ad;
+    transform: rotate(calc(-90deg + 3.6deg * 50));
+    transform-origin: 35px 35px;
+}
+.p-contents h1{
+    display: grid;
+    padding: 20px;
+
+}
+.circle-2 {
+    fill: none;
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke: #4caf50;
+    stroke-dasharray: 220; /* 2 * π * 35 (circumference) */
+    stroke-dashoffset: 220;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+.end-dot-2 {
+    fill: #4caf50;
+    transform: rotate(calc(-90deg + 3.6deg * 96));
+    transform-origin: 35px 35px;
+}
+/*ryt-3*/
+.ryt-3{
+    width: 520px;
+    height: 398px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    
+}
+ .ryt-top-3 p{
+    padding-top: 20px;
+}
+.ryt-top-3 p i{
+    padding-left: 310px;
+}
+.table{
+    width: 35vw;
+    height: 40vh;
+    
+}
+td img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-right: .5rem;
+    
+}
+table, th, td{
+    padding: 0.8rem;
+    border-collapse: collapse;
+    
+    
+}
+
+table{
+    width: 100%;
+}
+thead th{
+    position: sticky;
+    color: #b7b5b5;
+    top: 0;
+    left: 0;
+
+}
+
+ .first{
+    background-color: #d6c4d2;
+  
+}
+.second{
+    background-color: rgb(241, 242, 193);
+}
+.third{
+    background-color: rgb(245, 197, 204);
+}
+.fourth{
+    background-color: rgb(213, 235, 243);
+}
+

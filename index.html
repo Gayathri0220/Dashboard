@@ -1,0 +1,433 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard-9</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
+    <link id="theme-link" rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section>
+    <div class="vertical_nav">
+      <div class="logo" ><img src="logo.png"></div>
+      <nav class="nav-bar">
+        
+         <a href="#"><i class="fa fa-line-chart" aria-hidden="true"></i>Analytics</a>
+         <a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i>Products</a>
+         <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>Messages</a>
+         <a href="#"><i class="fa fa-user" aria-hidden="true"></i>Customers</a>
+         
+      </nav>
+      <nav class="nav-bar2">
+        <a href="#"><i class="fa fa-cog" aria-hidden="true"></i>Settings</a>
+        <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>Sign Out</a>
+      </nav>
+      <div class="support">
+        <img class="f6" src="f6.png" >
+      </div>
+      <button>Get Support</button>
+    </div>
+  </section>
+  <main>
+    <section id="top">
+      <div class="left-top">
+       <div><p>Analytics</p></div>
+       <div class="calen">
+        <h5>25-07-2024 - 30-07-2024 <i class="fa fa-calendar" aria-hidden="true"></i></h5>
+       </div>
+      </div>
+      <div class="theme">
+        <div><i class="fa fa-sun"></i></div>
+        <div class="theme-change" onclick="toggleTheme()"></div>
+        <div><i class="fa fa-moon"></i></div>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            const themeLink = document.getElementById('theme-link');
+            const themeChange = document.querySelector('.theme-change');
+            if (themeLink.getAttribute('href') === 'style.css') {
+                themeLink.setAttribute('href', 'dark-theme.css');
+                themeChange.classList.add('active');
+            } else {
+                themeLink.setAttribute('href', 'style.css');
+                themeChange.classList.remove('active');
+            }
+        }
+    </script>
+       <div class="right-top">
+         <div><img class="pro" src="profile.avif"></div>
+         <h5>Riya Guptha</h5>
+       </div>
+       </section>
+
+       <div class="columns">
+        <div class="col-1">
+          <div class="container">
+             <div class="box">
+              <p>Orders <i class="fa fa-clone" aria-hidden="true" style="padding-left: 120px;"></i></p>
+              <h1>201</h1>
+              <p class="num"><i class="fa fa-arrow-up" aria-hidden="true"></i>8.2% <span>since last month</span></p>
+              
+             </div>
+             <div class="box">
+              <p>Approved <i class="fa fa-check-square" aria-hidden="true" style="padding-left: 90px;"></i></p>
+              <h1>36</h1>
+              <p class="num"><i class="fa fa-arrow-up" aria-hidden="true"></i>3.4% <span>since last month</span></p>
+              
+             </div>
+             <div class="box">
+              <p>Month total<i class="fa fa-usd" aria-hidden="true" style="padding-left: 90px;"></i></p>
+              <h1>25410</h1>
+              <p class="num1"><i class="fa fa-arrow-down" aria-hidden="true"></i>0.2% <span>since last month</span></p>
+             </div>
+              <div class="box">
+              <p>Revenue<i class="fa fa-credit-card-alt" aria-hidden="true" style="padding-left: 100px;"></i></p>
+              <h1>1352</h1>
+              <p class="num1"><i class="fa fa-arrow-down" aria-hidden="true"></i>1.2% <span>since last month</span></p>
+              
+             </div>
+          </div>
+          <div class="container-2">
+            <div class="lft-2">
+               <div class="row-1">
+               <p >Sales dynamics
+               
+               <select id="year">
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+               </select></p></div>
+               <div class="chart-wrapper">
+                <div class="y-axis">
+                    <div>400k</div>
+                    <div>300k</div>
+                    <div>200k</div>
+                    <div>100k</div>
+                    <div>0</div>
+                    
+                </div>
+                <div class="chart-container">
+                    <div class="chart">
+                        <div class="chart-bar" style="height: 80%;">
+                            
+                        </div>
+                        <div class="chart-bar" style="height: 60%;">
+                            
+                        </div>
+                        <div class="chart-bar" style="height: 40%;">
+                            
+                        </div>
+                        <div class="chart-bar" style="height: 50%;">
+                            
+                        </div>
+                        <div class="chart-bar" style="height: 30%;">
+                            
+                        </div>
+                        <div class="chart-bar" style="height: 70%;">
+                            
+                        </div>
+                        <div class="chart-bar" style="height: 90%;">
+                            
+                        </div>
+                        <div class="chart-bar" style="height: 20%;">
+                            
+                        </div>
+                        <div class="chart-bar" style="height: 60%;">
+                            
+                        </div>
+                        <div class="chart-bar" style="height: 40%;">
+                            
+                        </div>
+                        <div class="chart-bar" style="height: 80%;">
+                            
+                        </div>
+                        <div class="chart-bar" style="height: 50%;">
+                          
+                        </div>
+                    </div>
+                    <div class="x-axis">
+                        <span>Jan</span>
+                        <span>Feb</span>
+                        <span>Mar</span>
+                        <span>Apr</span>
+                        <span>May</span>
+                        <span>Jun</span>
+                        <span>Jul</span>
+                        <span>Aug</span>
+                        <span>Sep</span>
+                        <span>Oct</span>
+                        <span>Nov</span>
+                        <span>Dec</span>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+          </div>
+          <div class="line">
+            <div class="row-1">
+              <p >OverAll User Activity
+              
+              <select id="year">
+               <option value="2024">2024</option>
+               <option value="2023">2023</option>
+               <option value="2022">2022</option>
+               <option value="2021">2021</option>
+              </select></p></div>
+              <html>
+                <head class="line-ryt">
+                  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                  <script type="text/javascript">
+                    google.charts.load('current', {'packages':['corechart']});
+                    google.charts.setOnLoadCallback(drawChart);
+              
+                    function drawChart() {
+                      var data = google.visualization.arrayToDataTable([
+                        ['Month', 'Sales'],
+                        ['Jan',  400],
+                        ['Feb',  570],
+                        ['Mar',  670],
+                        ['Jun',  930],
+                        ['Jul', 930],
+                        ['Aug',  1200],
+                        ['Sep',  1260],
+                        ['Oct',  1260],
+                        ['Nov',  1400],
+                        ['Dec',  1490]
+
+                      ]);
+              
+                      var options = {
+                        
+                        curveType: 'function',
+                        legend: { position: 'bottom' }
+                      };
+              
+                      var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+              
+                      chart.draw(data, options);
+                    }
+                  </script>
+                </head>
+                <body>
+                  <div id="curve_chart" style="width: 500px; height: 200px; padding-left: 5px; " ></div>
+                </body>
+              </html>
+              
+
+
+          </div>
+        </div>
+       <!--columns 2-->
+        <div class="col-2">
+          <div class="container">
+            <div class="box-ryt">
+              <p>Users</p>
+              <h1>4.890
+              <span>since last month</span></h1>
+              <div class="containerd">
+                <div class="labels">
+                  <div class="label-item"><span class="color-box" style="background-color: rgb(251, 184, 28);"></span>62% <span> New</span></div>
+                  <div class="label-item"><span class="color-box" style="background-color: rgb(246, 201, 96);"></span>26% <span>Returning</span></div>
+                  <div class="label-item"><span class="color-box" style="background-color: rgb(240, 226, 192);"></span>12% <span>Inactive</span></div>
+                </div>
+                <canvas id="myDoughnutChart1"></canvas>
+              </div>
+              <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+              <script>
+                // Setup
+                const data1 = {
+                  labels: ['62% New', '26% Returning', '12% Inactive'],
+                  datasets: [{
+                    label: 'My First Dataset',
+                    data: [62, 26, 12],
+                    backgroundColor: [
+                      'rgb(251, 184, 28)',
+                      'rgb(246, 201, 96)',
+                      'rgb(240, 226, 192)'
+                    ],
+                    hoverOffset: 4
+                  }]
+                };
+            
+                // Config
+                const config1 = {
+                  type: 'doughnut',
+                  data: data1,
+                  options: {
+                    responsive: true,
+                    plugins: {
+                      legend: {
+                        display: false
+                      },
+                      
+                    }
+                  },
+                };
+            
+                // Render
+                const myDoughnutChart1 = new Chart(
+                  document.getElementById('myDoughnutChart1'),
+                  config1
+                );
+              </script>
+            </div>
+            <div class="box-ryt">
+              <p>Subscriptions</p>
+              <h1>1.201
+              <span>since last month</span></h1>
+              <div class="containerd">
+                <div class="labels">
+                  <div class="label-item"><span class="color-box" style="background-color: rgb(37, 93, 234);"></span>70% <span> Paid</span></div>
+                   <div class="label-item"><span class="color-box" style="background-color: rgb(106, 151, 240);"></span>30% <span>Trial</span></div>
+                </div>
+                <canvas id="myDoughnutChart2"></canvas>
+              </div>
+              <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+              <script>
+                // Setup
+                const data2 = {
+                  labels: ['70%Paid','30%Trial'],
+                  datasets: [{
+                    label: 'My First Dataset',
+                    data: [70,30],
+                    backgroundColor: [
+                      'rgb(37, 93, 234)',
+                      'rgb(106, 151, 240)'
+                    ],
+                    hoverOffset: 4
+                  }]
+                };
+            
+                // Config
+                const config2 = {
+                  type: 'doughnut',
+                  data: data2,
+                  options: {
+                    responsive: true,
+                    plugins: {
+                      legend: {
+                        display: false
+                      },
+                      
+                    }
+                  },
+                };
+            
+                // Render
+                const myDoughnutChart2 = new Chart(
+                  document.getElementById('myDoughnutChart2'),
+                  config2
+                );
+              </script>
+            </div>
+            
+          </div>
+
+          <div class="ryt-2">
+           <div class="box-ryt-2">
+            <div class="paid">
+            <div>
+            <i class="fa fa-wallet" aria-hidden="true"></i></div>
+            <div class="progress-circle">
+              <svg width="70" height="70">
+                  <circle class="circle-bg" cx="35" cy="35" r="30"></circle>
+                  <circle class="circle" cx="35" cy="35" r="30" style="stroke-dashoffset: calc(220 - (220 * 20) / 100);"></circle>
+                  <circle class="end-dot" cx="35" cy="5" r="4"></circle>
+                  <text class="circle-text" x="35" y="38">+15%</text>
+              </svg>
+            </div></div>
+            <div class="p-contents">
+              <h1><span>Paid Invoices</span>
+              $30256.23
+              <span>Current Financial Year</span></h1>
+            </div>
+           </div>
+           <div class="box-ryt-2">
+            <div class="paid">
+            <div>
+            <i class="fa fa-money-check" aria-hidden="true"></i></div>
+            <div class="progress-circle">
+              <svg width="70" height="70">
+                  <circle class="circle-bg" cx="35" cy="35" r="30"></circle>
+                  <circle class="circle-2" cx="35" cy="35" r="30" style="stroke-dashoffset: calc(220 - (220 * 60) / 100);"></circle>
+                  <circle class="end-dot-2" cx="35" cy="5" r="4"></circle>
+                  <text class="circle-text" x="35" y="38">+59%</text>
+              </svg>
+            </div></div>
+            <div class="p-contents">
+              <h1><span>Funds received</span>
+              $150256.23
+              <span>Current Financial Year</span></h1>
+            </div>
+           </div>
+          </div>
+          <!--profiles-->
+          <div class="ryt-3">
+            <div class="ryt-top-3">
+              <p>Customer order <i class="fa fa-refresh" aria-hidden="true"></i></p>
+            </div>
+            <div class="table">
+            <section class="table-body">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Profile</th>
+                    <th>Address</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="first">
+                    <td><img src="p1.webp">Alexei</td>
+                    <td>India</td>
+                    <td>20-02-2023</td>
+                    <td>Delivered</td>
+                    <td>$1700</td>
+                  </tr>
+                  <tr class="second">
+                    <td><img src="p4.jpg">Lisa</td>
+                    <td>New York</td>
+                    <td>03-7-2024</td>
+                    <td>Processed</td>
+                    <td>$2850</td>
+                  </tr>
+                  <tr class="third">
+                    <td><img src="p5.jpg">Fathima</td>
+                    <td>Seoul</td>
+                    <td>25-3-2022</td>
+                    <td>Cancelled</td>
+                    <td>$3490</td>
+                  </tr>
+                  <tr class="fourth">
+                    <td><img src="p3.jpeg">Tina</td>
+                    <td>Canada</td>
+                    <td>01-11-2023</td>
+                    <td>Delivered</td>
+                    <td>$2500</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section></div>
+          </div>
+        </div>
+       </div>
+  </main>
+    
+</body>
+</html> 
+
+
+
